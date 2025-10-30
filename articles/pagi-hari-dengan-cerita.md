@@ -1,6 +1,6 @@
 # Pagi Hari di Akhir Bulan 
 
-Semenjak menjadi seorang yang pekerja di sebuah perusahaan yang ketika bekerja tidak mengenakan seragam dan ketika aku setiap pagi melangkahkan kaki ke tempat tujuan yang sama setiap harinya, itu selalu membuatku berpikir bahwa apakah semua yang aku lakukan ini adalah hal yang benar dan sudah sesuai dengan apa yang aku mau?. 
+Semenjak menjadi seorang pekerja di sebuah perusahaan yang ketika bekerja tidak mengenakan seragam dan ketika aku setiap pagi melangkahkan kaki ke tempat tujuan yang sama setiap harinya, itu selalu membuatku berpikir bahwa apakah semua yang aku lakukan ini adalah hal yang benar dan sudah sesuai dengan apa yang aku mau?. 
 
 Setelah begitu dalam bertanya kepada diri sendiri kini aku mendapatkan sebuah pencerahan, bahwa aku bukan hanya melakukan apa yang aku mau, tetapi aku melakukan apa yang dari dulu aku impikan, ini lah pekerjaan yang aku mau dan inginkan. Bekerja dengan kreativitas, bekerja dengan tim, bekerja dengan berbagai ide serta hal yang harus dimangemen secara baik dan benar, baik itu di internal maupun projek external yang aku kerjakan di luar kantor.
 
