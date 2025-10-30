@@ -265,7 +265,7 @@
 
     <div id="article-view" style="display:none;">
       <a class="back mb-3" href="#" id="back-link"><i class="fas fa-arrow-left mr-2"></i> Kembali ke daftar</a>
-      <div id="article" class="article-content" style="text-align:justify;"></div>
+      <div id="article" class="article-content" ></div>
     </div>
 
     <div id="msg" style="margin-top:20px;"></div>
@@ -358,7 +358,7 @@ function mdToHtml(md){
     if(line.trim()===''){
       out.push(''); continue;
     }
-    out.push('<p>'+inlineMd(line)+'</p>');
+    out.push('<p style="text-align:justify; padding: 6px; margin: 6px;">'+inlineMd(line)+'</p>');
   }
   closeList();
   return out.join('\n');
