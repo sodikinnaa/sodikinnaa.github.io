@@ -8,7 +8,7 @@ Tapi akan tetap ada hal yang membuatku tidak paham dan tidak bisa aku mengerti, 
 
 Tentunya hal itu adalah hal yang aku pergelutkan dengan diri sendiri  dan mendapatkan kesimpulan bahwa, tidak perlu mendengarkan orang. lakukan apa yang kau mau dan inginkan toh yang bakal menentukan itu baik atau tidaknya buat kamu adalah diri kamu sendiri bukannya orang lain yang menilai. 
 
-Terkadang orang hanya bisa menghakimi tanpa bisa memberikan solusi kongkrit serta tidak akan pernah memahami apa yang sudah kita pahami sejak awal. Hal itu menjadi penghambat kita untuk maju. 
+Terkadang orang hanya bisa menghakimi tanpa bisa memberikan solusi kongkrit serta tidak akan pernah memahami apa yang sudah kita pahami sejak awal. Hal itu bisa saja menjadi penghambat kita untuk maju. 
 
 Oke sekarang kita emang masih karyawan kita bisa berprinsip seperti itu, tetapi ketia suatu saat kita menjadi bosnya apakah akan bersikap seperti itu juga? 
 
