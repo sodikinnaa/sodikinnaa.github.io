@@ -1,0 +1,16 @@
+{
+    "name": "It Retceh API Post",
+    "slug": "it-retceh-api-post",
+    "version": "1.0.1",
+    "author": "Sodikin",
+    "homepage": "https://example.com",
+    "download_url": "https://example.com/downloads/it-retceh-api-post.zip",
+    "requires": "5.0",
+    "tested": "6.7",
+    "requires_php": "7.4",
+    "sections": {
+      "description": "Plugin untuk menghubungkan WordPress dengan API eksternal.",
+      "changelog": "Perubahan di versi 1.0.1:\n- Fix minor bug\n- Optimisasi koneksi API"
+    }
+  }
+  
