@@ -1,56 +1,142 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Blog | sodikinnaa</title>
+    <meta name="description" content="Kumpulan pemikiran, tutorial teknis, dan strategi SEO oleh sodikinnaa.">
+    <title>Blog | sodikinnaa - SEO & Fullstack Insights</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-      body { font-family: 'Inter', sans-serif; }
-      .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); }
-      .neon-text { color: #38bdf8; text-shadow: 0 0 10px rgba(56, 189, 248, 0.5); }
-      .gradient-bg { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
-      .card-hover:hover { transform: translateY(-5px); border-color: rgba(56, 189, 248, 0.5); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.3); }
+      :root { --bg: #0f172a; --accent: #38bdf8; }
+      body { font-family: 'Inter', -apple-system, sans-serif; background-color: var(--bg); color: #e2e8f0; margin: 0; }
+      .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px); }
+      .neon-text { color: var(--accent); text-shadow: 0 0 8px rgba(56, 189, 248, 0.4); }
+      .gradient-bg { background: radial-gradient(circle at 70% 20%, #1e293b, #0f172a); }
+      img { content-visibility: auto; }
     </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
   </head>
-  <body class="bg-[#0f172a] text-slate-200">
+  <body class="selection:bg-sky-500 selection:text-white antialiased">
 
     <!-- NAVBAR -->
     <nav class="fixed top-0 w-full z-50 glass border-b border-slate-800">
       <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tighter neon-text">sodikinnaa</a>
-        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
-          <a href="index.html" class="hover:text-sky-400">Home</a>
-          <a href="blog.html" class="text-sky-400">Blog</a>
+        <a href="index.html" class="text-2xl font-black tracking-tighter neon-text">sodikinnaa</a>
+        <div class="hidden md:flex space-x-8 font-semibold text-xs uppercase tracking-widest">
+          <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+          <a href="blog.html" class="text-sky-400 transition-colors">Blog</a>
+          <a href="index.html#projects" class="hover:text-sky-400 transition-colors">Projects</a>
         </div>
+        <a href="index.html#contact" class="bg-sky-600 hover:bg-sky-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-sky-900/30">CONTACT</a>
       </div>
     </nav>
 
-    <!-- BLOG HEADER -->
+    <!-- HEADER -->
     <header class="pt-40 pb-20 gradient-bg">
       <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
-        <h1 class="text-5xl font-black italic">Insights & <span class="text-sky-500">Thinking.</span></h1>
-        <p class="text-slate-400">Catatan teknis, strategi SEO, dan perkembangan AI oleh Wak Dondin & Mas Sodikin.</p>
+        <h1 class="text-5xl md:text-6xl font-black leading-tight">
+          Technical <span class="text-sky-500">Journal.</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+          Catatan strategi SEO, arsitektur automation, dan eksperimen AI oleh <span class="text-white">sodikinnaa</span> & Wak Dondin.
+        </p>
       </div>
     </header>
 
-    <!-- ARTICLES LIST -->
-    <section class="py-20">
-      <div class="max-w-4xl mx-auto px-6 space-y-12" id="blog-container">
-        <!-- Artikel akan muncul di sini -->
-        <article class="p-8 bg-slate-900 rounded-3xl border border-slate-800 card-hover transition-all space-y-4">
-          <div class="text-sky-500 text-xs font-bold tracking-widest uppercase">Feb 27, 2026 • AI Automation</div>
-          <h2 class="text-3xl font-bold hover:text-sky-400 cursor-pointer transition-all">Integrasi Threads & Instagram: Era Baru Sultan Engine</h2>
-          <p class="text-slate-400 leading-relaxed">Bagaimana kami mengotomatisasi alur konten dari server pribadi menuju ekosistem Meta menggunakan Node.js dan Graph API...</p>
-          <a href="#" class="inline-block text-white font-bold border-b-2 border-sky-500 pb-1">Read More</a>
-        </article>
-      </div>
-    </section>
+    <!-- BLOG SECTION (SEO FRIENDLY) -->
+    <main class="py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <!-- SEARCH & CATEGORY (Optional UI) -->
+        <div class="flex flex-wrap gap-4 mb-16 border-b border-slate-800 pb-8 text-[10px] font-bold tracking-widest uppercase text-slate-500">
+          <span class="text-sky-500 border-b border-sky-500">All Articles</span>
+          <span class="hover:text-white cursor-pointer">SEO Strategy</span>
+          <span class="hover:text-white cursor-pointer">Automation</span>
+          <span class="hover:text-white cursor-pointer">AI News</span>
+        </div>
 
-    <footer class="py-20 border-t border-slate-800 text-center">
-      <p class="text-slate-600 text-sm">© 2026 sodikinnaa • Managed by Wak Dondin 🚀</p>
+        <!-- ARTICLE LIST -->
+        <div class="space-y-20">
+          
+          <!-- Article 1 -->
+          <article class="group space-y-4">
+            <header class="space-y-2">
+              <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
+                <span>Feb 27, 2026</span>
+                <span class="text-slate-700">•</span>
+                <span>Automation</span>
+              </div>
+              <h2 class="text-3xl font-black group-hover:text-sky-400 transition-colors leading-snug">
+                <a href="#">Membangun Arsitektur Postingan Otomatis: Threads & Instagram API</a>
+              </h2>
+            </header>
+            <p class="text-slate-400 leading-relaxed text-sm">
+              Eksplorasi teknis Sultan Engine dalam mengintegrasikan Graph API untuk distribusi konten otomatis di ekosistem Meta. Mengapa kami memilih Node.js dan bagaimana penanganan token keamanannya...
+            </p>
+            <footer class="pt-2">
+              <a href="#" class="text-xs font-black uppercase tracking-widest border-b-2 border-sky-500 pb-1 hover:border-white transition-all">Read Full Article</a>
+            </footer>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="group space-y-4">
+            <header class="space-y-2">
+              <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
+                <span>Feb 25, 2026</span>
+                <span class="text-slate-700">•</span>
+                <span>SEO 기술</span>
+              </div>
+              <h2 class="text-3xl font-black group-hover:text-sky-400 transition-colors leading-snug">
+                <a href="#">Optimasi Core Web Vitals untuk Peringkat Search Engine 2026</a>
+              </h2>
+            </header>
+            <p class="text-slate-400 leading-relaxed text-sm">
+              Analisis mendalam mengenai pentingnya LCP, FID, dan CLS dalam algoritma pencarian terbaru. Bagaimana meminimalkan bundle size Tailwind CSS untuk performa maksimal...
+            </p>
+            <footer class="pt-2">
+              <a href="#" class="text-xs font-black uppercase tracking-widest border-b-2 border-sky-500 pb-1 hover:border-white transition-all">Read Full Article</a>
+            </footer>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="group space-y-4">
+            <header class="space-y-2">
+              <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
+                <span>Feb 20, 2026</span>
+                <span class="text-slate-700">•</span>
+                <span>Web Dev</span>
+              </div>
+              <h2 class="text-3xl font-black group-hover:text-sky-400 transition-colors leading-snug">
+                <a href="#">Laravel 11 & AdminLTE: Standar Baru Dashboard Manajemen</a>
+              </h2>
+            </header>
+            <p class="text-slate-400 leading-relaxed text-sm">
+              Implementasi Langit Kopi App menggunakan framework Laravel 11. Fokus pada integrasi anti-bentrok jadwal dan sistem QR Code per meja...
+            </p>
+            <footer class="pt-2">
+              <a href="#" class="text-xs font-black uppercase tracking-widest border-b-2 border-sky-500 pb-1 hover:border-white transition-all">Read Full Article</a>
+            </footer>
+          </article>
+
+        </div>
+
+        <!-- PAGINATION (Optional UI) -->
+        <div class="mt-20 pt-10 border-t border-slate-800 flex justify-between items-center text-[10px] font-bold tracking-widest uppercase">
+          <span class="text-slate-600 italic">Page 1 of 5</span>
+          <a href="#" class="bg-slate-900 px-6 py-3 rounded-full hover:bg-sky-600 hover:text-white transition-all">Next Articles →</a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-24 bg-[#0f172a] border-t border-slate-800 text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <p class="text-slate-600 text-[10px] font-bold tracking-[0.3em] uppercase">© 2026 sodikinnaa • Curated by Wak Dondin 🚀</p>
+      </div>
     </footer>
 
   </body>
