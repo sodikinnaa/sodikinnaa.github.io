@@ -50,20 +50,20 @@
     <main class="py-20">
       <div class="max-w-4xl mx-auto px-6">
         
-        <!-- SEARCH & CATEGORY (Optional UI) -->
-        <div class="flex flex-wrap gap-4 mb-16 border-b border-slate-800 pb-8 text-[10px] font-bold tracking-widest uppercase text-slate-500">
-          <span class="text-sky-500 border-b border-sky-500">All Articles</span>
-          <span class="hover:text-white cursor-pointer">SEO Strategy</span>
-          <span class="hover:text-white cursor-pointer">Automation</span>
-          <span class="hover:text-white cursor-pointer">AI News</span>
-          <span class="hover:text-white cursor-pointer">Web Dev</span>
+        <!-- SEARCH & CATEGORY (DYNAMIS FILTERING) -->
+        <div class="flex flex-wrap gap-4 mb-16 border-b border-slate-800 pb-8 text-[10px] font-bold tracking-widest uppercase text-slate-500" id="category-filter">
+          <button data-category="all" class="filter-btn text-sky-500 border-b border-sky-500 pb-1 transition-all">All Articles</button>
+          <button data-category="seo" class="filter-btn hover:text-white transition-all pb-1">SEO Strategy</button>
+          <button data-category="automation" class="filter-btn hover:text-white transition-all pb-1">Automation</button>
+          <button data-category="ai" class="filter-btn hover:text-white transition-all pb-1">AI News</button>
+          <button data-category="webdev" class="filter-btn hover:text-white transition-all pb-1">Web Dev</button>
         </div>
 
         <!-- ARTICLE LIST -->
-        <div class="space-y-20">
+        <div class="space-y-20" id="blog-posts">
           
-          <!-- Article 1 -->
-          <article class="group space-y-4">
+          <!-- Article 1: Automation -->
+          <article class="blog-item group space-y-4" data-category="automation">
             <header class="space-y-2">
               <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
                 <span>Feb 27, 2026</span>
@@ -83,7 +83,7 @@
           </article>
 
           <!-- Article 2: SEO Strategy -->
-          <article class="group space-y-4">
+          <article class="blog-item group space-y-4" data-category="seo">
             <header class="space-y-2">
               <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
                 <span>Feb 27, 2026</span>
@@ -103,7 +103,7 @@
           </article>
 
           <!-- Article 3: AI News -->
-          <article class="group space-y-4">
+          <article class="blog-item group space-y-4" data-category="ai">
             <header class="space-y-2">
               <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
                 <span>Feb 27, 2026</span>
@@ -122,8 +122,8 @@
             </footer>
           </article>
 
-          <!-- Article 4 -->
-          <article class="group space-y-4">
+          <!-- Article 4: SEO Strategy -->
+          <article class="blog-item group space-y-4" data-category="seo">
             <header class="space-y-2">
               <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
                 <span>Feb 25, 2026</span>
@@ -142,8 +142,8 @@
             </footer>
           </article>
 
-          <!-- Article 5 -->
-          <article class="group space-y-4">
+          <!-- Article 5: Web Dev -->
+          <article class="blog-item group space-y-4" data-category="webdev">
             <header class="space-y-2">
               <div class="flex items-center space-x-3 text-[10px] font-bold tracking-widest uppercase text-sky-500">
                 <span>Feb 20, 2026</span>
@@ -163,6 +163,34 @@
           </article>
 
         </div>
+
+        <script>
+          const filterButtons = document.querySelectorAll('.filter-btn');
+          const blogItems = document.querySelectorAll('.blog-item');
+
+          filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              const category = btn.getAttribute('data-category');
+
+              // Update active state
+              filterButtons.forEach(b => {
+                b.classList.remove('text-sky-500', 'border-b', 'border-sky-500');
+                b.classList.add('text-slate-500');
+              });
+              btn.classList.remove('text-slate-500');
+              btn.classList.add('text-sky-500', 'border-b', 'border-sky-500');
+
+              // Filter articles
+              blogItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            });
+          });
+        </script>
 
         <!-- PAGINATION (Optional UI) -->
         <div class="mt-20 pt-10 border-t border-slate-800 flex justify-between items-center text-[10px] font-bold tracking-widest uppercase">
