@@ -21,9 +21,14 @@
 
     <!-- NAVBAR -->
     <nav class="fixed top-0 w-full z-50 glass border-b border-slate-800">
-      <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="../index.html" class="text-xl font-black tracking-tighter neon-text">sodikinnaa</a>
-        <a href="../blog.html" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-sky-400 transition-colors">← Kembali ke Blog</a>
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="../index.html" class="text-2xl font-black tracking-tighter neon-text">sodikinnaa</a>
+        <div class="hidden md:flex space-x-8 font-semibold text-xs uppercase tracking-widest">
+          <a href="../index.html" class="hover:text-sky-400 transition-colors">Home</a>
+          <a href="../blog.html" class="text-sky-400 transition-colors">Blog</a>
+          <a href="../index.html#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+        </div>
+        <a href="../index.html#contact" class="bg-sky-600 hover:bg-sky-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-sky-900/30">CONTACT</a>
       </div>
     </nav>
 
@@ -60,12 +65,12 @@
       
       <p>
         Alur kerjanya cukup sistematis:
-        <ol class="list-decimal pl-6 space-y-3 text-slate-400 mb-6">
+        <ul class="list-decimal pl-6 space-y-3 text-slate-400 mb-6">
           <li><strong>Content Processing:</strong> Otak AI (XPoseBrain) meramu caption dan gambar.</li>
           <li><strong>Container Creation:</strong> Mengirimkan instruksi upload media ke Meta.</li>
           <li><strong>Status Checking:</strong> Memastikan media sudah "matang" dan siap tayang di server Meta.</li>
           <li><strong>Final Publish:</strong> Memicu perilisan konten secara publik.</li>
-        </ol>
+        </ul>
       </p>
 
       <h2>Strategi SEO di Balik Konten</h2>
